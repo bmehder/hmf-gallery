@@ -70,7 +70,7 @@
         <!-- <h3>{post.title.rendered}</h3> -->
         <a on:click|preventDefault={(e) => updatePostIndex(i)} href="/"><img
             in:scale
-            src={post.source_url}
+            src={post.featured_image_url}
             alt="gallery-item" /></a>
       {/each}
     </Grid>
@@ -80,10 +80,10 @@
       <div>
         <!-- Use the featured image property of the
            current post object for the src attr. -->
-        <img src={posts[postIndex].source_url} alt="single item" />
+        <img src={posts[postIndex].featured_image_url} alt="single item" />
         {#if posts[postIndex].excerpt}
           <p>
-            {@html posts[postIndex].excerpt}
+            {@html posts[postIndex].excerpt.rendered}
           </p>
         {/if}
       </div>
@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 50%;
   }
   .modal img {
     width: auto;

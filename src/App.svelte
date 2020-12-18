@@ -5,7 +5,7 @@
 
 <Section background="#00003e" padding="2em 0">
   <Gallery
-    source="https://highlandsmotoringfestival.com/wp-json/wp/v2/media?per_page=100"
+    source="https://lubanaromatics.com/wp-json/wp/v2/posts"
     title="Highlands Motoring Festival"
     color="white" />
 </Section>
